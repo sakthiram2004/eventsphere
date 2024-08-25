@@ -1,6 +1,8 @@
 import 'package:eventsphere/Homepage/homepage.dart';
 import 'package:eventsphere/Login_and_Signup/loginpage.dart';
+import 'package:eventsphere/Routes/Routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -33,7 +35,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      initialRoute: "/homepage",
+      getPages: Routes.routes,
     );
   }
 }

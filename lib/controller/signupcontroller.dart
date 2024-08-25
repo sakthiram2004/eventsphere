@@ -90,9 +90,6 @@ class SignUpController extends GetxController {
   void pageRoute(String token, String roll) async {
     SharedPreferences pref = await SharedPreferences.getInstance();
     await pref.setString("token", token);
-    if (roll == "Student")
-      Get.toNamed(Routes.homepage);
-    else
-      Get.toNamed(Routes.organizerhome);
+    if (roll == "Student") Get.toNamed(Routes.homepage);
   }
 }
