@@ -1,3 +1,5 @@
+import 'package:eventsphere/Homepage/homepage.dart';
+import 'package:eventsphere/Login_and_Signup/loginpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomePage(),
     );
   }
 }
