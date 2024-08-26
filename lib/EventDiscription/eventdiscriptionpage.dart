@@ -1,4 +1,5 @@
 import 'package:eventsphere/Routes/Routes.dart';
+import 'package:eventsphere/widgets/subeventslider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -222,6 +223,8 @@ class _EventDescriptionState extends State<EventDescription> {
                     ),
                     SizedBox(height: 8),
                     Text("Event description"),
+                    SizedBox(height: 8),
+                    SubEventSlider(),
                     SizedBox(height: 8),
                     Text(
                       "Image",
